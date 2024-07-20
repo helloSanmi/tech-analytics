@@ -1,0 +1,137 @@
+/* Tech analytics style */
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.columnOne {
+  width: 50%;
+}
+.columnOneWrapper {
+  padding: 24px 180px 0;
+}
+
+.columnTwo {
+  width: 50%;
+  height: 100%;
+}
+
+.columnTwo video {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heading {
+  color: rgb(10, 10, 125);
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.paragraph {
+  color: #adadad;
+  font-size: 16px;
+}
+
+.inputContainer {
+  margin-top: 48px;
+  position: relative;
+}
+.inputContainer input[type="email"] {
+  height: 48px;
+  padding: 4px 12px;
+  width: 80%;
+  background-color: #ffffff;
+  color: #555555;
+  border: 2px solid #333;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+}
+
+.inputContainer label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffffff;
+  padding: 0 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+.button {
+  margin-top: 24px;
+  width: 80%;
+  height: 48px;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  background-color: #eb5757;
+  cursor: pointer;
+}
+
+.email {
+  padding-bottom: 12px;
+}
+.footer {
+  color: #adadad;
+  font-size: 12px;
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+}
+.enquiry {
+  color: #555555;
+  margin-top: 48px;
+}
+
+@media only screen and (max-width: 700px) {
+  .columnTwo {
+    display: none;
+  }
+  .columnOne {
+    width: 100%;
+  }
+  .columnOneWrapper {
+    padding: 24px 80px ;
+  }
+  .inputContainer input[type="email"] {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    position: inherit;
+  }
+  .enquiry {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+.gradientCircle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px; 
+  background: linear-gradient(to bottom right, #f23232, rgba(0,0,255,0));
+  /* clip-path: polygon(100% 0, 0 0, 100% 100%); */
+  clip-path: circle(180px at 100% 0);
+}
+}
+
+@media (min-width: 701px) and (max-width: 1120px){
+
+  .columnTwo {
+    display: none;
+  }
+  .columnOne {
+    width: 100%;
+  }
+}
