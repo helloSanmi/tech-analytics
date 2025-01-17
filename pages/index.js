@@ -55,11 +55,11 @@ export default function Home() {
                 priority
               />
             </span>{" "}
-            <b>info@techanalytics.org</b>
+            <b>info@nestanalytics.org</b>
           </div>
         </div>
         <p className={styles.footer}>
-          © Tech Analytics | All Rights Reserved
+          © Nest Analytics | All Rights Reserved
         </p>
       </div>
       <div className={styles.columnTwo}>
