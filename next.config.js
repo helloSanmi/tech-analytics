@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // reactStrictMode: true,
-  // output: 'export', // Ensure this is commented out or removed
-  output: 'export',
+  reactStrictMode: true,
+  output: 'export', // Only use this if the app is fully static
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static export
   },
-}
+};
 
-module.exports = nextConfig // Ensure "exports" is in lowercase
+module.exports = nextConfig;
