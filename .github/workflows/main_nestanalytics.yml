@@ -18,8 +18,11 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Install dependencies and build Next.js app
+      - name: Install dependencies
         run: npm ci
+
+      - name: Build with production configuration
+        run: npm run build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -48,3 +51,4 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5FFE10C020BF4FC69E172940382D7172 }}
           package: .
+          startup-command: 'npm start' # Explicitly set the startup command
